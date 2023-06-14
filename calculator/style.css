@@ -9,23 +9,26 @@
 
 }
 body{
+    margin:0;
+    border: 0;
+    padding: 0;
     width: 100%;
-    height: 100vh;
+    height: 150vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(45deg,#0a0a0a,#3a4452);
+    background: linear-gradient(45deg,#141313,#191e24);
 }
 .calculator{
     border: 1px solid #717377;
     padding: 20px;
     border-radius: 10px;
     background-color: transparent;
-    box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+    box-shadow: 0px 3px 15px rgba(64, 66, 68, 0.5);
 
 }
 input{
-    width: 320px ;
+    width: 400px ;
     border:20%;
     border-radius: 10px;
     border-color: aliceblue;
@@ -36,7 +39,7 @@ input{
     font-size: 40px;
     text-align: right;
     cursor: pointer;
-    color: rgb(31, 83, 129);
+    color: rgb(58, 100, 136);
 
 }
 input::placeholder{
@@ -46,15 +49,17 @@ input::placeholder{
  
 
 button{
-    border: none;
+     
     width: 60px;
     height: 60px;
     margin: 10px;
+    border-color: #262b2a;
     border-radius: 25%;
     background : transparent;
+    display: flexbox;
     color: white;
     font-size: 20px;
-    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1) ;
+    box-shadow: -8px -8px 15px rgba(65, 60, 60, 0.1) ;
     cursor: pointer;
     transition-duration: 0.2ms;
 
@@ -66,12 +71,32 @@ button:hover{
 }
 
 
+
+
 .equalbtn{
-    background-color: rgb(31, 169, 224);
+    background-color: rgb(31, 169, 224);    
+    width:48%;
+    height:75px;
+    border-radius: 10%;
+    box-sizing: border-box;
+
+}
+.zero{
+    width:41%;
+    height:75px;
+    border-radius: 10%;
+    box-sizing: border-box;
 
 }
 
 .operator{
 
     color: #06e4c6;
+}
+
+#clr{
+    width: 145px;
+    border-radius: 10%;
+    background-color: aquamarine;
+    color: white;
 }
