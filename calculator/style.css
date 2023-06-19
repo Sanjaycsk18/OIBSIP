@@ -26,26 +26,12 @@ body{
     padding: 20px;
     border-radius: 10px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: transparent;
     box-shadow:0px 3px 15px rgba(64,66,68, 0.5);
 
 }
-body .container footer {
-  margin-top: 2.5em;
-  color: rgb(84, 56, 48);
-}
-body .container footer span {
-  font-size: small;
-  text-align: center;
-  vertical-align: bottom;
-}
-body .container footer span a {
-  text-decoration: none;
-  color: rgba(58, 100,136, 0.7960784314);
-}
-body .container footer span a:hover {
-  color: rgba(0, 0, 0, 0.7960784314);
-} 
 .calc{
     display: grid;
     justify-content: center;
