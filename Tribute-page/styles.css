@@ -63,7 +63,7 @@ a:hover{
 /**content-styles**/
 
 section{
-    height: 110vh;
+    height: 100vh;
     scroll-snap-align: start;
     scroll-snap-stop: always;
     padding:  3rem;
@@ -143,19 +143,15 @@ figure img {
     border-radius: 60px;
     object-position: center;
     display: block;
-    width: 85%;
-    margin:auto;
+    width: 75%;
+    margin: 5% auto;
+     
 }
 
-
-hr {
-    width: 90%;
-    margin: 4rem 1rem 1rem 3.5rem;
-
-}
 
 footer {
     text-align: center;
+    font-size: smaller;
     padding: 3px;
 }
  
@@ -217,15 +213,10 @@ footer {
         align-content: center;
         display: block;
         width: 80%;
-        margin-left: auto;
+        margin: auto;
         margin-bottom: 2%;
     }
-    hr{
-        display: flex;
-        align-content: center;
-        margin:5rem 1.5rem .5rem 3.5rem
-         
-    }
+
     footer{
         padding: 3px;
         text-align: center;
@@ -244,6 +235,7 @@ footer {
     body section{
         height: auto;
         padding: 1rem;
+        margin: 0;
     }
     body section h2{
         font-size: 40px;
@@ -251,6 +243,7 @@ footer {
     }
     body section .content{
         padding: 0;
+        margin: 0;
         line-height: 1.2em;
     }
     body section .content p{
@@ -286,14 +279,14 @@ footer {
     }
 
     #bottom img{
-        width:70%;
+        width:90%;
         align-content: center;
+        display: block;
+        margin: 2% auto ;
 
     }
-    hr{
-        margin-left:2.9rem;
-        align-items: center;
-        align-content: center;
+    footer{
+        font-size: smaller;
     }
 
 
@@ -318,6 +311,7 @@ footer {
 
     body section .content{
         padding: 0;
+        margin: 0;
         line-height: 1em;
     }
     body section .content p{
@@ -329,16 +323,20 @@ footer {
     }
     #mid figure img{
         width:120%;
+
     }
     #mid .content p{
         width:90%;
         text-align: justify;
     }
-
-    hr{
-        margin-left: 1.5rem;
+    #bottom img{
+        display: block;
+        margin :auto;
+        margin-bottom: 2rem;
         align-content: center;
     }
+
+
     footer{
         font-size: smaller;
     }
