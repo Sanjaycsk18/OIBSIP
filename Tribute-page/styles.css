@@ -81,7 +81,7 @@ section .content {
 
 section .content p {
     text-indent: 2rem;
-    width: 70%;
+    width: 80%;
     font-family: 'Exo',sans-serif;
     line-height: 1.5em;
     text-align: justify;
@@ -92,8 +92,6 @@ section .content p {
 .ref {
     height: 2rem ;
 }
-
-
 
 section .content figure {
     width: 30%;
@@ -145,7 +143,7 @@ figure img {
     border-radius: 60px;
     object-position: center;
     display: block;
-    width: 80%;
+    width: 85%;
     margin:auto;
 }
 
@@ -218,7 +216,7 @@ footer {
         object-position: center;
         align-content: center;
         display: block;
-        width: 85%;
+        width: 80%;
         margin-left: auto;
         margin-bottom: 2%;
     }
@@ -258,6 +256,13 @@ footer {
     body section .content p{
         font-size: 15px;
     }
+
+    section .content figure{
+        width: 40%;
+        opacity: .9;
+        font-size: 12px;
+        text-align: center;
+    } 
     #about .content{
         flex-direction: column;
         align-items: center;
@@ -279,9 +284,64 @@ footer {
         align-items: center;
         font-size: small;
     }
+
+    #bottom img{
+        width:70%;
+        align-content: center;
+
+    }
     hr{
+        margin-left:2.9rem;
         align-items: center;
+        align-content: center;
     }
 
 
+}
+
+@media (width:432px) {
+
+    .title{
+        font-size: 30px;
+        text-align: center;
+    }
+    .subtitle{
+        font-size: 12px;
+    }
+    body section{
+        height: auto;
+        padding: 0;
+    }
+    body section h2{
+        font-size: 28px;
+    }
+
+    body section .content{
+        padding: 0;
+        line-height: 1em;
+    }
+    body section .content p{
+        font-size: 12px;
+        align-content: center;
+    }
+    #about  figure img{
+        width:150%;
+    }
+    #mid figure img{
+        width:120%;
+    }
+    #mid .content p{
+        width:90%;
+        text-align: justify;
+    }
+
+    hr{
+        margin-left: 1.5rem;
+        align-content: center;
+    }
+    footer{
+        font-size: smaller;
+    }
+
+    
 }
