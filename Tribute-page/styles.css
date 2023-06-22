@@ -68,9 +68,6 @@ section{
     scroll-snap-stop: always;
     padding:  3rem;
     font-size: 18px ;  
-    
-    
-
 }
 
 section .content {
@@ -92,7 +89,7 @@ section .content p {
     margin-bottom: 3rem;
 }
 
-br {
+.ref {
     height: 2rem ;
 }
 
@@ -111,19 +108,20 @@ section .content figure {
 section h2{
     font-size: 56px;
 }
+ 
 
 #about .content{
     flex-direction: row;
 }
 
-
 #mid .content p {
-
+    margin-top: 4rem;
     padding-right: 2rem;
 }
 
 #mid figure  {
-    width: 40%;
+    width: 50%;
+    align-content: center;
 }
 
 figure img {
@@ -132,7 +130,7 @@ figure img {
 }
 
 #mid figure figcaption {
-    margin-top: -6rem;
+    margin-top: 2px;
 }
 
 #mid {
@@ -144,16 +142,18 @@ figure img {
 
 #bottom img{
 
-    border-radius: 64px;
+    border-radius: 60px;
     object-position: center;
     display: block;
     width: 80%;
-    margin: 0 auto;
+    margin:auto;
 }
+
 
 hr {
     width: 90%;
-    margin:2rem;
+    margin: 4rem 1rem 1rem 3.5rem;
+
 }
 
 footer {
@@ -161,3 +161,127 @@ footer {
     padding: 3px;
 }
  
+@media (max-width:1240px){
+    html{
+        scroll-behavior: smooth;
+        scroll-snap-type: y proximity;
+    }
+    #header{
+        height:auto;
+        padding:3rem 0;
+    }
+    .title{
+        font-size: 60px;
+        text-align: center;
+    }
+    .subtitle{
+        font-size: 30px;
+    }
+    
+    body section{
+        height: auto;
+        padding: 3rem 4rem;
+        flex-direction: row-reverse;
+    }
+
+    body section h2{
+        font-size: 48px;
+        padding-left: 2rem;
+    }
+    body section .content {
+        padding: 1rem;
+        margin-left: 2rem;
+        font-size: 18px;
+        line-height: 1.3em;
+    }
+    section .content figure{
+        width: 40%;
+        opacity: .9;
+        font-size: 14px;
+        text-align: center;
+    } 
+    
+    #mid figure{
+        width: 50%;
+    }
+    
+    #mid figure figcaption{
+        margin-top: 8px;
+    }
+    #bottom {
+        align-items: center;
+        padding: auto 0%;
+    }
+    #bottom img{
+
+        border-radius: 40px;
+        object-position: center;
+        align-content: center;
+        display: block;
+        width: 85%;
+        margin-left: auto;
+        margin-bottom: 2%;
+    }
+    hr{
+        display: flex;
+        align-content: center;
+        margin:5rem 1.5rem .5rem 3.5rem
+         
+    }
+    footer{
+        padding: 3px;
+        text-align: center;
+        margin-block-end: -4%;
+    }
+}
+
+@media (max-width:786px){
+    .title{
+        font-size: 48px;
+        text-align: center;
+    }
+    .subtitle{
+        font-size: 24px;
+    }
+    body section{
+        height: auto;
+        padding: 1rem;
+    }
+    body section h2{
+        font-size: 40px;
+        margin-bottom: 2rem;
+    }
+    body section .content{
+        padding: 0;
+        line-height: 1.2em;
+    }
+    body section .content p{
+        font-size: 15px;
+    }
+    #about .content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about figure img{
+        width: 80%;
+
+    }
+    #about figure figcaption{
+        margin-bottom: 2rem;
+        margin-top: 2px;
+    }
+    #mid .content{
+        flex-direction: column;
+        align-items: center;
+    }
+    #bottom{
+        align-items: center;
+        font-size: small;
+    }
+    hr{
+        align-items: center;
+    }
+
+
+}
